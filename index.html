@@ -1006,75 +1006,85 @@
       <h2 class="section-title" style="display:inline-block;">기존 대리운전의 문제,<br>고루라기가 해결합니다</h2>
       <p class="section-sub" style="margin: 16px auto 0;">알고리즘이 일방적으로 배정하는 시대는 끝났습니다.<br>고루라기는 고객에게 선택권을 돌려줍니다.</p>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 60px 1fr; gap:0; align-items:stretch;">
+    <style>
+      .compare-wrap { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+      .compare-vs { display:flex; align-items:center; justify-content:center; background:var(--primary); border-radius:12px; padding:12px 0; margin-bottom:4px; }
+      @media(max-width:700px){
+        .compare-wrap { grid-template-columns:1fr; }
+      }
+    </style>
+
+    <div class="compare-wrap">
       <!-- 기존 대리운전 -->
-      <div class="reveal" style="background:#FEF2F2; border-radius:20px 0 0 20px; padding:40px 36px; border:1px solid #FEE2E2; border-right:none;">
-        <div style="font-size:13px; font-weight:700; letter-spacing:2px; color:#DC2626; margin-bottom:24px;">기존 대리운전</div>
-        <div style="display:flex; flex-direction:column; gap:20px;">
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">❌</span>
+      <div class="reveal" style="background:#FEF2F2; border-radius:20px; padding:32px 28px; border:1px solid #FEE2E2;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:24px;">
+          <span style="font-size:20px;">❌</span>
+          <span style="font-size:14px; font-weight:700; letter-spacing:1px; color:#DC2626;">기존 대리운전</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">❌</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">선택권 없음</div>
+              <div style="font-size:14px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">선택권 없음</div>
               <div style="font-size:13px; color:#991B1B; line-height:1.7;">누가 올지 모릅니다. 알고리즘이 일방적으로 배정. 기사의 신원·경력을 사전에 확인할 방법이 없습니다.</div>
             </div>
           </div>
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">❌</span>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">❌</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">과도한 수수료</div>
-              <div style="font-size:13px; color:#991B1B; line-height:1.7;">수도권 20~25%, 지방 최대 30%. 플랫폼이 일방적으로 정한 구조. 기사 수익은 줄고, 고객 요금은 높아집니다.</div>
+              <div style="font-size:14px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">과도한 수수료</div>
+              <div style="font-size:13px; color:#991B1B; line-height:1.7;">수도권 20~25%, 지방 최대 30%. 기사 수익은 줄고, 고객 요금은 높아집니다.</div>
             </div>
           </div>
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">❌</span>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">❌</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">가격 협상 불가</div>
-              <div style="font-size:13px; color:#991B1B; line-height:1.7;">플랫폼이 정해준 요금을 그대로 내야 합니다. 고객도 기사도 가격에 대한 발언권이 없습니다.</div>
+              <div style="font-size:14px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">가격 협상 불가</div>
+              <div style="font-size:13px; color:#991B1B; line-height:1.7;">플랫폼이 정해준 요금을 그대로 내야 합니다.</div>
             </div>
           </div>
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">❌</span>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">❌</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">탑승 불안감</div>
-              <div style="font-size:13px; color:#991B1B; line-height:1.7;">처음 보는 사람의 차에 탑니다. 사전 검증 없이 신뢰를 강요당합니다.</div>
+              <div style="font-size:14px; font-weight:700; color:#7F1D1D; margin-bottom:4px;">탑승 불안감</div>
+              <div style="font-size:13px; color:#991B1B; line-height:1.7;">처음 보는 사람. 사전 검증 없이 신뢰를 강요당합니다.</div>
             </div>
           </div>
         </div>
       </div>
-      <!-- VS -->
-      <div class="reveal" style="background:var(--primary); display:flex; align-items:center; justify-content:center; transition-delay:0.1s;">
-        <span style="font-size:13px; font-weight:700; color:var(--gold); letter-spacing:1px; writing-mode:vertical-rl; text-orientation:mixed;">VS</span>
-      </div>
       <!-- 고루라기 -->
-      <div class="reveal" style="background:#F0FDF4; border-radius:0 20px 20px 0; padding:40px 36px; border:1px solid #BBF7D0; border-left:none; transition-delay:0.15s;">
-        <div style="font-size:13px; font-weight:700; letter-spacing:2px; color:#16A34A; margin-bottom:24px;">고루라기</div>
-        <div style="display:flex; flex-direction:column; gap:20px;">
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">✅</span>
+      <div class="reveal" style="background:#F0FDF4; border-radius:20px; padding:32px 28px; border:1px solid #BBF7D0; transition-delay:0.1s;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:24px;">
+          <span style="font-size:20px;">✅</span>
+          <span style="font-size:14px; font-weight:700; letter-spacing:1px; color:#16A34A;">고루라기</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">✅</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#14532D; margin-bottom:4px;">직접 선택</div>
-              <div style="font-size:13px; color:#166534; line-height:1.7;">기사 프로필·사진·별점·후기를 미리 확인하고 직접 지명합니다. 혹은 일반 배차로 빠르게 연결.</div>
+              <div style="font-size:14px; font-weight:700; color:#14532D; margin-bottom:4px;">직접 선택</div>
+              <div style="font-size:13px; color:#166534; line-height:1.7;">기사 프로필·사진·별점·후기를 미리 확인하고 직접 지명합니다.</div>
             </div>
           </div>
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">✅</span>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">✅</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#14532D; margin-bottom:4px;">업계 최저 15%</div>
-              <div style="font-size:13px; color:#166534; line-height:1.7;">기사 수익은 85%로 올리고, 고객 요금은 낮춥니다. 기사도 고객도 고루 잘 되는 구조.</div>
+              <div style="font-size:14px; font-weight:700; color:#14532D; margin-bottom:4px;">업계 최저 15%</div>
+              <div style="font-size:13px; color:#166534; line-height:1.7;">기사 수익 85%, 고객 요금은 낮춥니다. 기사도 고객도 고루 WIN.</div>
             </div>
           </div>
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">✅</span>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">✅</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#14532D; margin-bottom:4px;">양방향 가격 협의</div>
-              <div style="font-size:13px; color:#166534; line-height:1.7;">고객이 희망 요금을 제안하고 기사가 수락 또는 역제안합니다. 20초 협상 플로우로 투명한 거래.</div>
+              <div style="font-size:14px; font-weight:700; color:#14532D; margin-bottom:4px;">양방향 가격 협의</div>
+              <div style="font-size:13px; color:#166534; line-height:1.7;">고객이 희망 요금 제안 → 기사가 수락 또는 역제안. 20초 협상 플로우.</div>
             </div>
           </div>
-          <div style="display:flex; gap:14px; align-items:flex-start;">
-            <span style="font-size:18px; margin-top:2px;">✅</span>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:16px; margin-top:2px; flex-shrink:0;">✅</span>
             <div>
-              <div style="font-size:15px; font-weight:700; color:#14532D; margin-bottom:4px;">신뢰 기반 매칭</div>
-              <div style="font-size:13px; color:#166534; line-height:1.7;">알고 탑니다. 별점·후기로 검증된 기사, 운행 완료 후에만 등록 가능한 선호 기사 시스템.</div>
+              <div style="font-size:14px; font-weight:700; color:#14532D; margin-bottom:4px;">신뢰 기반 매칭</div>
+              <div style="font-size:13px; color:#166534; line-height:1.7;">알고 탑니다. 별점·후기로 검증된 기사만 연결됩니다.</div>
             </div>
           </div>
         </div>
